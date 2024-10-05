@@ -1,0 +1,122 @@
+ html {
+      box-sizing: border-box;
+      font-size: 100%;
+  }
+
+  *, *::after, *::before {
+      box-sizing: inherit;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  body{ 
+    background-color:  hsl(185, 75%, 39%);
+    background-image: url("bg-pattern-top.svg"), url("bg-pattern-bottom.svg"); 
+    background-repeat: no-repeat, no-repeat ;
+    background-size: 650px 650px, 650px 650px;
+    background-position: -450px -350px , 175px 325px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6rem;
+    margin:0;
+    scroll-behavior: smooth;
+   } 
+
+   @media (min-width:62.5rem){
+     body {
+       background-size: 800px 800px, 800px 800px;
+       background-position: -200px -350px, 800px 350px;
+       margin: 150px 400px;
+       overflow: hidden;
+     }
+
+     .hipe {
+       justify-content:space-around;
+       align-content: center;
+       
+     }
+
+     ul{
+      padding-left: 0;
+     }
+
+   }
+
+.card {
+     background-color: white;  
+     margin: 150px 35px 5px 35px;  
+     border-radius: 10px;
+}
+
+.pattern{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.person {
+    display: block;
+    margin-left:   auto;
+    margin-right: auto;
+    margin-top: -60px;
+    align-items: center;
+    border-radius: 100%;
+    border: 5px solid hsl(0, 0%, 100%);
+    position: relative;
+    
+    
+}
+
+.name {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.age{
+  color: hsl(0, 0%, 59%);
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.city{
+  text-align: center;
+  font-size: 16px;
+  color: hsl(0, 0%, 59%);
+  margin-top: 5px;
+}
+
+.hipe {
+  display: flex;
+}
+
+.hipe>ul{
+  padding-top: 0px;
+  padding-bottom: 0px;
+} 
+
+ul {
+  list-style-type: none;
+  padding: auto;
+}
+
+.hipe>ul>li>span {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hipe>ul>li>nav {
+  font-size: 14px;
+  color:hsl(0, 0%, 59%) ;
+}
+
