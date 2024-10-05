@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after  {
+    box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  padding: 75px 22px ;
+  font-size: 15px;
+  margin: 0;
+}
+
+.panel {
+    background-color:  hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+    border-radius: 10px;
+}
+
+.me {
+    background-color: hsl(277, 64%, 61%);
+    width: 331px;
+    height: 390px;
+    border-radius: 10px 10px 0 0;
+}
+
+img {
+    width: inherit;
+    height:inherit;
+    mix-blend-mode: multiply;
+    
+}
+
+h1 {
+    font-family:'Inter', sans-serif ;
+    color: hsl(0, 0%, 100%);
+    font-size: 28px;
+    margin: 45px 10px ;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+ 
+.insight {
+    color: hsl(277, 64%, 61%);
+}
+
+.description {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.65);
+    font-size: 14px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description div {
+    margin: 4px 0px;
+}
+
+.source {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.source span {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.source h2 {
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.attribution {
+    color: white;
+}
+
+@media only screen and (min-width:900px){
+     
+    body{
+        padding: auto;
+    }
+
+    .panel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px;
+        max-width: 1274px;
+        max-height: 622px;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        
+    }
+    
+
+    .me {
+        grid-column: 2/2;
+        width: 545px;
+        height: 450px;
+        display: inline;
+    }
+
+    .content {
+        grid-column: 1/2;
+        display: inline;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    .source {
+        flex-direction: row;
+    }
+
+.source span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+
+}
